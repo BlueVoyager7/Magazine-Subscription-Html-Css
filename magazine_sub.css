@@ -1,0 +1,38 @@
+body{
+    background-color:  rgb(243, 114, 135);
+}
+.field{
+    width: 300px;
+    margin: 2cm  0;
+    padding: 1cm 2cm;
+    border: 4px double;
+    border-color: white;
+    min-width: 200 px;
+    border-radius: 6px;
+    background-color: #143b59;
+}
+legend{
+    font-size: xx-large;
+    padding: 0 .25;
+    color: white;
+    font-style: bold;
+}
+label{
+    display: block;
+    font-size: medium;
+}
+.check {
+    display: inline;
+}
+.first table tr td label{
+     font: Arial  white;
+     font-style: italic ;
+     font-weight:bold;
+     color: white;
+     font-size: large;
+ }
+
+.first table tr td input{
+    font: Arial  black;
+    font-weight: normal;
+}

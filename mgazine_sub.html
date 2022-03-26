@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazine Subscription</title>
+    <link rel="stylesheet" href="practical7.css">
+    <link rel="icon" href="imgs/PRCT 7_1.webp">
+</head>
+<body>
+    <center>
+        <fieldset class="field">
+            <legend style="color: white; font: bold, xx-large;">Magazine Subscription</legend> 
+            <form action="backend.php">
+                <div class="first"> 
+                    <table>
+                <tr >
+                    <td><label for="myname">Name:</label> </td>
+                    <td><input type="text" name="myname" id="myname" placeholder="Enter your Name"></td>
+                 </tr>
+                 <tr>
+                    <td><label for="Address">Address: </label> </td>
+                    <td><input type="text" name="Address" id="Address" placeholder="Type your Address"></td>
+                 </tr>
+                 <tr>
+                    <td><label for="city">City:</label> </td>
+                    <td> <input type="text" name="city" id="city" placeholder="Enter your City"></td>
+                 </tr>
+                 <tr>
+                    <td><label for="state">State:</label> </td>
+                     <td><input type="text" name="state" id="state" placeholder="Enter your State"></td>
+                 </tr>
+                 <tr>
+                    <td><label for="pincode">Pincode:</label> </td>
+                     <td><input type="number" name="pincode" id="pincode" placeholder="Enter your pincode" onKeyPress="if(this.value.length==6) return false;"></td>
+                 </tr>
+                 <tr>
+                    <div class="colorbox" >
+                        <td><label for="color" style="display: inline;"> Select your Magazine:</label></td>
+                        <td><select name="color" id="mycolor">
+                            <option value="time" style="color: #143b59; background-color: white;"> Time</option>
+                            <option value="GQ" style="color: #143b59; background-color: white;  font: bolder;">GQ</option>
+                            <option value="Forbes" style="color: #143b59; background-color: white;"  selected>Forbes</option>
+                            <option value="Intoday" style="color: #143b59; background-color: white;"  selected>India Today</option>
+                        </select></td>
+                    </div>
+                 </tr>
+                </div>
+                <br>
+            </div class=checks>
+            <tr>
+             <td><label for="sub" style="display: inline;">Subscription Pack:
+            </label> </td>
+            <td style="color: white;">
+            6 months <input type="Radio" name="sub" id="sub"  > <br>
+            1 year <input type="radio" name="sub" id="sub" > <br>
+            2 year<input type="radio" name="sub" id="sub" >
+        </td>
+        </tr>
+        <br> <br>
+        <tr>
+            <td colspan="2"><label for="textbox">  Additional Comments: </label> </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div class="textbox">
+                
+                    <TEXtarea name="textbox" rows="7" cols="30" style="color: #04253f ; background-color: pink; font-style: oblique; font-size: large;" id="textbox" ></TEXtarea>
+                </div> 
+            </td>   
+        </tr>        
+    </table>
+            
+            <div class="check" style="inline-size: auto;">  
+                <label for="copy" style="display: inline; color: white;">Send copy to my mail</label> <input type="checkbox" name="copy" id="copy" > 
+             </div>
+             <br> <br>
+             <div class="button">
+                <input type="submit" name="Submit" value="Send your order"  style="color: #143b59; background-color: white; font: bolder;">
+            
+             </div>
+            </form>
+        </center>
+        </fieldset>
+</body>
+</html>
